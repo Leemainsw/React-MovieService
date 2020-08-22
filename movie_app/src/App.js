@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 
 const foodILike = [
   {
+  id: 1,
   name: "Kimchi",
   image: "https://kstory365.files.wordpress.com/2015/01/kimchi-01-cabbage.jpg",
   rating : 5
   },
   {
+  id: 2,
   name: "samgyetang",
   image: "https://img.seoul.co.kr//img/upload/2019/07/25/SSI_20190725184016.jpg",
   rating : 4.7
@@ -37,6 +39,7 @@ function App() {
     <div>
       <h1>Hello!</h1>
       {foodILike.map(result => <Food 
+      key = {result.id}
       name = {result.name} 
       image = {result.image}
       rating = {result.rating}
