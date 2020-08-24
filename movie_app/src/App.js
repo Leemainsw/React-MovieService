@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { number } from 'prop-types';
 
 // class component
@@ -9,11 +10,13 @@ class App extends React.Component{
     movies: []
   };
 
-  componentDidMount(){
-    setTimeout(()=>{
-      this.setState({ isLoading: false, book: true });
+  getMovies = () => {
+    const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
 
-    }, 6000)
+  }
+  async componentDidMount(){
+    this.getMovies();
+    // fetch() or Axios
   }
 
   render(){
