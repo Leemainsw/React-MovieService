@@ -1,51 +1,40 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { number } from 'prop-types';
 
+// class component
+class App extends React.Component{
 
-const foodILike = [
-  {
-  id: 1,
-  name: "Kimchi",
-  image: "https://kstory365.files.wordpress.com/2015/01/kimchi-01-cabbage.jpg",
-  rating : 5
-  },
-  {
-  id: 2,
-  name: "samgyetang",
-  image: "https://img.seoul.co.kr//img/upload/2019/07/25/SSI_20190725184016.jpg",
-  rating : 4.7
+  state = {
+    count : 0
+  };
+
+  add = () =>{console.log('add');};
+  minus = () => {console.log('minus')};
+
+  render(){
+    return(
+      <div>
+        <h1>The Number is : {this.state.count}</h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
+      </div>
+    )
   }
-];
-
-function Food({name, image, rating}){
-  console.log(name, image);
-  return(
-    <div>
-      <h1>{ name }</h1> 
-      <h4>{rating}/5.0</h4>
-      <img src={image}></img>
-    </div>
-  );
 }
 
-Food.propTypes = {
-  name : PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
-}
-
-function App() {
-  return (
-    <div>
-      <h1>Hello!</h1>
-      {foodILike.map(result => <Food 
-      key = {result.id}
-      name = {result.name} 
-      image = {result.image}
-      rating = {result.rating}
-      />)}
-    </div>
-  );
-}
+// Function component
+// function App() {
+//   return (
+//     <div>
+//       <h1>Hello!</h1>
+//       {foodILike.map(result => <Food 
+//       key = {result.id}
+//       name = {result.name} 
+//       image = {result.image}
+//       rating = {result.rating}
+//       />)}
+//     </div>
+//   );
+// }
 
 export default App;
