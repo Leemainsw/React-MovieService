@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Leemainsw/React-MovieService/static/css/main.0a34cfbc.chunk.css",
+    "main.js": "/Leemainsw/React-MovieService/static/js/main.0ce07ac4.chunk.js",
+    "main.js.map": "/Leemainsw/React-MovieService/static/js/main.0ce07ac4.chunk.js.map",
+    "runtime-main.js": "/Leemainsw/React-MovieService/static/js/runtime-main.27d97783.js",
+    "runtime-main.js.map": "/Leemainsw/React-MovieService/static/js/runtime-main.27d97783.js.map",
+    "static/js/2.bb9b8681.chunk.js": "/Leemainsw/React-MovieService/static/js/2.bb9b8681.chunk.js",
+    "static/js/2.bb9b8681.chunk.js.map": "/Leemainsw/React-MovieService/static/js/2.bb9b8681.chunk.js.map",
+    "index.html": "/Leemainsw/React-MovieService/index.html",
+    "precache-manifest.f47c71c936ff63e2408bfd81de65ff74.js": "/Leemainsw/React-MovieService/precache-manifest.f47c71c936ff63e2408bfd81de65ff74.js",
+    "service-worker.js": "/Leemainsw/React-MovieService/service-worker.js",
+    "static/css/main.0a34cfbc.chunk.css.map": "/Leemainsw/React-MovieService/static/css/main.0a34cfbc.chunk.css.map",
+    "static/js/2.bb9b8681.chunk.js.LICENSE.txt": "/Leemainsw/React-MovieService/static/js/2.bb9b8681.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27d97783.js",
+    "static/js/2.bb9b8681.chunk.js",
+    "static/css/main.0a34cfbc.chunk.css",
+    "static/js/main.0ce07ac4.chunk.js"
+  ]
+}
